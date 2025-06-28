@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background:#000430;
+    --secondaaryBackground:#171c48;
+    --text:#fff;
+    --purple:#828dff;
+    --teal:#24feee;
+}
+
+body{
+    background-color: #000430;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    max-width: 500px;
+    margin: 120px auto 0px auto;
+}
+.stats-container{
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+    border-radius: 10px;
+    border: 3px solid #8f7df7;
+    width: 100%;
+    justify-content: space-between;
+}
+.details{
+    width: 100%;
+}
+#progressBar{
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #171c48;
+    margin-top: 20px;
+}
+#progress{
+    width: 0%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #24feee;
+    transition:all 0.3s ease;
+}
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: #828dff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+input{
+ outline: none;
+ padding: 16px;
+ flex: 1;
+ background-color: #171c48;
+ border-radius: 10px;
+ border: 1px solid  #828dff; 
+ color: #fff;   
+}
+button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #828dff;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+.taskItem {
+width: 100%;
+display: flex;
+background-color: #171c48;
+padding: 10px;
+border-radius: 10px;
+justify-content: space-between;
+align-items: center;
+}
+.task {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.task input{
+    height: 20px;
+    width: 20px;
+}
+.completed p{
+    text-decoration: line-through;
+    color: #24feee;
+}
+.taskItem img{
+width: 24px;
+height: 24px;
+margin: 0 10px;
+cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+   .container{
+       padding: 20px;
+    }
+    #progressBar{
+        width: 120%;
+    }
+}
+
+
+@media screen and (max-width:375px){
+   .container{
+       padding: 5px;
+    }
+    #progressBar{
+        width: 120%;
+    }
+}
